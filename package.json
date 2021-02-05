@@ -1,19 +1,20 @@
 {
-  "name": "extjs-loader",
-  "version": "1.0.0",
+  "name": "@imakss/extjs-loader",
+  "version": "0.0.3",
   "description": "A ExtJs project module loader for webpack",
-  "main": "index.js",
+  "main": "dist/index.js",
   "private": "true",
-  "author": "imakss",
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "scripts": {
-    "start": "npm run build -- -w",
     "clean": "del-cli dist",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production babel lib -d dist --copy-files",
     "security": "npm audit",
     "prepare": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
@@ -40,9 +41,15 @@
     "chai-json-schema": "^1.4.0",
     "colors": "^1.4.0",
     "core-js": "^2.6.12",
-    "esprima": "^4.0.1"
+    "esprima": "^4.0.1",
+    "loader-utils": "^1.4.0",
+    "schema-utils": "^2.7.1"
   },
   "keywords": [
-    "webpack"
-  ]
+    "webpack",
+    "extjs",
+    "loader",
+    "sencha"
+  ],
+  "author": "Maxim Aldanov <aldmakss@gmail.com>"
 }
