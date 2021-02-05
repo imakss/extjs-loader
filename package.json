@@ -3,14 +3,14 @@
   "version": "0.0.3",
   "description": "A ExtJs project module loader for webpack",
   "main": "dist/index.js",
-  "private": "true",
   "license": "LGPL-3.0",
   "scripts": {
     "clean": "del-cli dist",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production babel lib -d dist --copy-files",
     "security": "npm audit",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "echo \"No test specified\""
   },
   "files": [
     "dist"
@@ -51,5 +51,13 @@
     "loader",
     "sencha"
   ],
-  "author": "Maxim Aldanov <aldmakss@gmail.com>"
+  "author": "Maxim Aldanov <aldmakss@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imakss/extjs-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imakss/extjs-loader/issues"
+  },
+  "homepage": "https://github.com/imakss/extjs-loader#readme"
 }
