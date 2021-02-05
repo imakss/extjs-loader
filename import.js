@@ -1,7 +1,7 @@
 import fs, { readdirSync, statSync, open, writeFile, appendFileSync } from 'fs';
 import path, { extname, dirname, basename } from 'path';
 import colors from 'colors'
-import FileParser from './fileParser'
+import FileParser from './lib/fileParser'
 
 const getFiles = (dir, files_) => {    
     files_ = files_ || [];
