@@ -45,7 +45,7 @@
     "schema-utils"
   ],
   "dependencies": {
-    "bluebird": "^3.5.0",
+    "bluebird": "^3.7.2",
     "colors": "^1.4.0",
     "comment-parser": "^0.7.6",
     "esprima": "^4.0.1",
